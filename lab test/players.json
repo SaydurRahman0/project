@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Vinícius Júnior",
+    "position": "Forward",
+    "number": 7,
+    "nationality": "Brazil",
+    "image": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=400&auto=format&fit=crop"
+  },
+  {
+    "id": 2,
+    "name": "Jude Bellingham",
+    "position": "Midfielder",
+    "number": 5,
+    "nationality": "England",
+    "image": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=400&auto=format&fit=crop"
+  },
+  {
+    "id": 3,
+    "name": "Thibaut Courtois",
+    "position": "Goalkeeper",
+    "number": 1,
+    "nationality": "Belgium",
+    "image": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=400&auto=format&fit=crop"
+  },
+  {
+    "id": 4,
+    "name": "Antonio Rüdiger",
+    "position": "Defender",
+    "number": 22,
+    "nationality": "Germany",
+    "image": "https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=400&auto=format&fit=crop"
+  },
+  {
+    "id": 5,
+    "name": "Federico Valverde",
+    "position": "Midfielder",
+    "number": 15,
+    "nationality": "Uruguay",
+    "image": "https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?q=80&w=400&auto=format&fit=crop"
+  },
+  {
+    "id": 6,
+    "name": "Rodrygo",
+    "position": "Forward",
+    "number": 11,
+    "nationality": "Brazil",
+    "image": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?q=80&w=400&auto=format&fit=crop"
+  }
+]

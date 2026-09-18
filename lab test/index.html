@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Madrid | Player Directory</title>
+    <!-- Google Fonts for modern typography -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-brand">
+        <div class="logo">RM</div>
+        <h1>Real Madrid CF</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="#squad">Players</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero-section">
+      <div class="hero-content">
+        <h2>Welcome to the Bernabéu</h2>
+        <p>Discover the stars behind the greatest club in the world.</p>
+        <a href="#squad" class="btn-primary">Explore the Squad</a>
+      </div>
+    </header>
+
+    <!-- Player Section -->
+    <section id="squad" class="player-section">
+      <div class="section-header">
+        <h2>First Team Squad</h2>
+        <p>Meet the players for the 2026 season</p>
+      </div>
+
+      <!-- JS will inject player cards here -->
+      <div id="player-container" class="player-grid">
+        <!-- Cards go here dynamically -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="about">
+      <p>&copy; 2026 Real Madrid CF Fan Directory. Designed for CSE 3210.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
