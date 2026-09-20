@@ -1,0 +1,6 @@
+{
+  "name": "Signature Beauty Salon",
+  "description": "Signature Beauty Salon - Luxury Women's Hair, Skin, Bridal & Spa Sanctuary in Chattogram.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="/js/polyfill.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book an Appointment | Signature Beauty Salon</title>
+  <meta name="description" content="Schedule your bespoke beauty, hair, facial, bridal, or spa appointment online at Signature Beauty Salon in East Nasirabad, Chattogram.">
+  
+  <meta property="og:title" content="Book an Appointment | Signature Beauty Salon">
+  <meta property="og:description" content="Reserve your sanctuary self-care experience with our master artisans.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..800&family=Plus+Jakarta+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+  <!-- Pure CSS Stylesheet -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Modular Header Component -->
+  <site-header active="appointment"></site-header>
+
+  <!-- Page Banner -->
+  <section class="page-banner">
+    <div class="container">
+      <span class="section-tag">Reserve Your Ritual</span>
+      <h1 class="page-banner-title">Book an Appointment</h1>
+      <p class="section-subtitle">
+        Select your desired treatment or package, preferred artist, and time. We will prepare your station and welcome tea in advance.
+      </p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-separator">&rsaquo;</span>
+        <span>Appointment</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN BOOKING SECTION -->
+  <main class="section">
+    <div class="container">
+      <div class="booking-layout">
+
+        <!-- Booking Form Container -->
+        <div class="booking-form-card">
+          <div style="margin-bottom: 2rem;">
+            <h2 style="font-size: 1.75rem; margin-bottom: 0.5rem;">Guest Reservation Details</h2>
+            <p style="color: var(--dark-muted); font-size: 0.95rem;">
+              Fill in your details below. Real-time confirmation will be generated instantly upon submission.
+            </p>
+          </div>
+
+          <form id="appointment-form" novalidate>
+            <!-- Name & Phone -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="client-name" class="form-label">Full Name <span class="text-rose">*</span></label>
+                <input type="text" id="client-name" name="name" class="form-control" placeholder="e.g. Eleanor Vance" required>
+                <span class="form-error">Please enter your full name.</span>
+              </div>
+              <div class="form-group">
+                <label for="client-phone" class="form-label">Phone Number <span class="text-rose">*</span></label>
+                <input type="tel" id="client-phone" name="phone" class="form-control" placeholder="e.g. 0196968133" required>
+                <span class="form-error">Please enter a valid phone number (at least 10 digits).</span>
+              </div>
+            </div>
+
+            <!-- Email & Specialist -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="client-email" class="form-label">Email Address <span class="text-rose">*</span></label>
+                <input type="email" id="client-email" name="email" class="form-control" placeholder="e.g. eleanor@example.com" required>
+                <span class="form-error">Please enter a valid email address.</span>
+              </div>
+              <div class="form-group">
+                <label for="specialist-select" class="form-label">Preferred Specialist</label>
+                <select id="specialist-select" name="specialist" class="form-control">
+                  <option value="First Available Master Specialist">First Available Master Specialist</option>
+                  <option value="Elena Vance (Founder & Master Colorist)">Elena Vance — Master Colorist & Hair</option>
+                  <option value="Sophia Chen (Lead Esthetician)">Sophia Chen — Lead Esthetician & Facials</option>
+                  <option value="Isabella Rossi (Bridal & Makeup Artist)">Isabella Rossi — Bridal & Glam Makeup</option>
+                  <option value="Maya Patel (Spa & Massage Therapist)">Maya Patel — Spa & Holistic Massage</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Service/Package Selection -->
+            <div class="form-group">
+              <label for="service-select" class="form-label">Select Service or Package <span class="text-rose">*</span></label>
+              <select id="service-select" name="service" class="form-control" required>
+                <option value="">-- Please Choose a Treatment or Package --</option>
+                
+                <optgroup label="🌟 Curated Packages (Bundled Experiences)">
+                  <option value="Glow Package">Glow Package ($145 - 2 hrs)</option>
+                  <option value="Bridal Glow Package">Bridal Glow Package ($380 - 4 hrs)</option>
+                  <option value="Self-Care Package">Self-Care Package ($195 - 2.5 hrs)</option>
+                  <option value="Hair Care Package">Hair Care Package ($165 - 2 hrs)</option>
+                  <option value="Complete Makeover Package">Complete Makeover Package ($320 - 3.5 hrs)</option>
+                  <option value="Royal Spa Retreat">Royal Spa Retreat ($290 - 3.5 hrs)</option>
+                </optgroup>
+
+                <optgroup label="💇 Hair Care & Styling">
+                  <option value="Hair: Artisan Balayage & Gloss">Artisan Balayage & Gloss ($185)</option>
+                  <option value="Hair: Signature Precision Cut & Blowout">Signature Precision Cut & Blowout ($85)</option>
+                  <option value="Hair: Botanical Scalp Detox & Keratin">Botanical Scalp Detox & Keratin Repair ($110)</option>
+                </optgroup>
+
+                <optgroup label="✨ Facial & Skincare">
+                  <option value="Facial: HydraFacial Radiance Boost">HydraFacial Radiance Boost ($140)</option>
+                  <option value="Facial: Gua Sha & Lymphatic Sculpt">Gua Sha & Lymphatic Facial Sculpt ($115)</option>
+                  <option value="Facial: 24k Gold Collagen Ritual">24k Gold Collagen Anti-Aging Ritual ($165)</option>
+                </optgroup>
+
+                <optgroup label="💄 Makeup & Artistry">
+                  <option value="Makeup: Soft Dewy Daylight Glam">Soft Dewy Daylight Glam ($75)</option>
+                  <option value="Makeup: Red Carpet Evening Glamour">Red Carpet Evening Glamour ($110)</option>
+                  <option value="Makeup: 1-on-1 Artistry Masterclass">1-on-1 Makeup Artistry Masterclass ($135)</option>
+                </optgroup>
+
+                <optgroup label="💅 Nail Care">
+                  <option value="Nails: Japanese Gel Spa Manicure">Japanese Gel Spa Manicure ($65)</option>
+                  <option value="Nails: Deluxe Rose Petal Pedicure">Deluxe Rose Petal Pedicure ($80)</option>
+                  <option value="Nails: Chrome & Fine Line Art">Minimalist Chrome & Fine Line Art ($95)</option>
+                </optgroup>
+
+                <optgroup label="🌿 Spa & Relaxation">
+                  <option value="Spa: Aromatherapy Hot Stone Ritual">Aromatherapy Hot Stone Ritual ($120)</option>
+                  <option value="Spa: Wild Lavender Body Polish">Wild Lavender Full Body Polish ($95)</option>
+                  <option value="Spa: Warm Herbal Compress Relief">Warm Herbal Compress Tension Relief ($130)</option>
+                </optgroup>
+
+                <optgroup label="👰 Bridal Services">
+                  <option value="Bridal: Hair Couture & Veil Styling">Bridal Hair Couture & Veil Styling ($195)</option>
+                  <option value="Bridal: Luminous Airbrush Makeup">Luminous Airbrush Bridal Makeup ($185)</option>
+                  <option value="Bridal: Bridesmaid Elegance Service">Bridesmaid Elegance Hair & Makeup ($150)</option>
+                </optgroup>
+
+                <optgroup label="🍵 Consultations">
+                  <option value="Complimentary 15-Min Consultation">Complimentary 15-Min Skin/Hair Consultation ($0)</option>
+                </optgroup>
+              </select>
+              <span class="form-error">Please select a service or package.</span>
+            </div>
+
+            <!-- Date & Time Row -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="appointment-date" class="form-label">Preferred Date <span class="text-rose">*</span></label>
+                <input type="date" id="appointment-date" name="date" class="form-control" required>
+                <span class="form-error">Please choose an appointment date (today or in future).</span>
+              </div>
+
+              <div class="form-group">
+                <label for="appointment-time" class="form-label">Preferred Time Slot <span class="text-rose">*</span></label>
+                <select id="appointment-time" name="time" class="form-control" required>
+                  <option value="">-- Choose Time Window --</option>
+                  <option value="09:30 AM (Morning Serenity)">09:30 AM (Morning Serenity)</option>
+                  <option value="11:00 AM (Mid-Morning Glow)">11:00 AM (Mid-Morning Glow)</option>
+                  <option value="01:00 PM (Afternoon Refresh)">01:00 PM (Afternoon Refresh)</option>
+                  <option value="02:30 PM (Mid-Afternoon)">02:30 PM (Mid-Afternoon)</option>
+                  <option value="04:00 PM (Golden Hour)">04:00 PM (Golden Hour)</option>
+                  <option value="05:30 PM (Sunset Wind Down)">05:30 PM (Sunset Wind Down)</option>
+                  <option value="07:00 PM (Evening Relaxation)">07:00 PM (Evening Relaxation)</option>
+                </select>
+                <span class="form-error">Please pick your desired time slot.</span>
+              </div>
+            </div>
+
+            <!-- Special Requests / Notes -->
+            <div class="form-group">
+              <label for="client-notes" class="form-label">Special Requests, Allergies or Notes</label>
+              <textarea id="client-notes" name="notes" class="form-control" rows="3" placeholder="Tell us about sensitive skin, allergies, bridal timeline, or if you require quiet relaxation time..."></textarea>
+            </div>
+
+            <!-- Promo Code input -->
+            <div class="form-group">
+              <label for="promo-code" class="form-label">Promo / Gift Voucher Code</label>
+              <div class="promo-input-group">
+                <input type="text" id="promo-code" name="promo" class="form-control" placeholder="Use SIGNATUREGLOW for 20% off first visit" style="text-transform: uppercase;">
+                <button type="button" id="apply-promo-btn" class="btn btn-outline-rose" style="white-space: nowrap;">Apply Code</button>
+              </div>
+              <span id="promo-msg" style="font-size: 0.85rem; margin-top: 0.35rem; display: block;"></span>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" id="book-btn" class="btn btn-primary btn-block btn-lg" style="margin-top: 1rem;">
+              Confirm Reservation Request
+            </button>
+            <p style="font-size: 0.82rem; color: var(--dark-muted); text-align: center; margin-top: 0.75rem;">
+              🔒 Instant automated confirmation. No advance credit card required for standard sessions.
+            </p>
+          </form>
+        </div>
+
+        <!-- Sidebar Info & Booking Policy -->
+        <aside class="booking-sidebar">
+          <!-- Quick Contact -->
+          <div class="info-card">
+            <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Need Immediate Assistance?</h3>
+            <p style="color: var(--dark-muted); font-size: 0.95rem; margin-bottom: 1.25rem;">
+              Prefer to speak with our concierge or have a custom bridal timeline?
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+              <a href="tel:0196968133" style="display: flex; align-items: center; gap: 0.75rem; color: var(--rose-dark); font-weight: 600;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                0196968133
+              </a>
+              <a href="mailto:saimaislam.iiuc2017@gmail.com" style="display: flex; align-items: center; gap: 0.75rem; color: var(--rose-dark); font-weight: 600;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                saimaislam.iiuc2017@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <!-- Salon Booking Policy -->
+          <div class="policy-box">
+            <h4 class="policy-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-rose"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              Salon Sanctuary Policies
+            </h4>
+            <div class="policy-item">
+              <strong>Cancellation & Rescheduling:</strong>
+              Please provide at least 24 hours advance notice if you need to reschedule or cancel so we may offer the opening to guests on our waitlist.
+            </div>
+            <div class="policy-item">
+              <strong>Arrival & Refreshment:</strong>
+              We invite you to arrive 10 minutes prior to your session to enjoy a cup of fresh organic botanical tea and unwind in our lounge.
+            </div>
+            <div class="policy-item">
+              <strong>Medical & Skin Allergies:</strong>
+              Kindly inform your esthetician of any active retinoid use, peel therapies, or allergies prior to your facial or waxing session.
+            </div>
+          </div>
+
+          <!-- First Visit Privilege -->
+          <div style="background-color: var(--ivory); border: 1px dashed var(--rose); border-radius: var(--radius-md); padding: 1.5rem; text-align: center;">
+            <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--rose-dark); font-weight: 700;">First Visit Privilege</span>
+            <h4 style="margin: 0.5rem 0 0.25rem 0; font-size: 1.15rem;">20% Off Your First Visit</h4>
+            <p style="font-size: 0.85rem; color: var(--dark-muted); margin-bottom: 0.75rem;">
+              Enter code <code style="background: var(--nude); padding: 2px 6px; border-radius: 4px; font-weight: 700; color: var(--dark);">SIGNATUREGLOW</code> in the promo box above.
+            </p>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- CONFIRMATION MODAL -->
+  <div id="booking-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <div class="modal-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      <h3 id="modal-title" class="modal-title">Reservation Confirmed!</h3>
+      <p class="modal-message">
+        Thank you, <strong id="modal-name"></strong>. Your sanctuary beauty session has been reserved at Signature Beauty Salon. A confirmation SMS & calendar invite have been dispatched.
+      </p>
+
+      <div class="modal-details" id="modal-summary">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <button id="modal-close-btn" class="btn btn-primary btn-block">Back to Salon Home</button>
+    </div>
+  </div>
+
+  <!-- Modular Footer & Back to Top Components -->
+  <site-footer></site-footer>
+  <back-to-top></back-to-top>
+
+  <!-- Modular JavaScript Entry Point -->
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>
