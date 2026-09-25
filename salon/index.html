@@ -1,604 +1,893 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <script src="/js/polyfill.js"></script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Signature Beauty Salon | Reveal Your Natural Beauty</title>
-  <meta name="description" content="Signature Beauty Salon is an award-winning luxury sanctuary for women offering expert hair styling, organic facials, bridal makeup, nail artistry, and holistic spa rituals in Chattogram.">
-  
-  <!-- OpenGraph Social Metadata -->
-  <meta property="og:title" content="Signature Beauty Salon | Luxury Women's Hair, Skin & Spa">
-  <meta property="og:description" content="Immerse yourself in our tranquil sanctuary. Reveal your natural glow with bespoke hair, skin, and spa treatments.">
-  <meta property="og:type" content="website">
+  <head>
+    <script src="/js/polyfill.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signature Beauty Salon | Reveal Your Natural Beauty</title>
+    <meta
+      name="description"
+      content="Signature Beauty Salon is an award-winning luxury sanctuary for women offering expert hair styling, organic facials, bridal makeup, nail artistry, and holistic spa rituals in Chattogram."
+    />
 
-  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..800&family=Plus+Jakarta+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <!-- OpenGraph Social Metadata -->
+    <meta
+      property="og:title"
+      content="Signature Beauty Salon | Luxury Women's Hair, Skin & Spa"
+    />
+    <meta
+      property="og:description"
+      content="Immerse yourself in our tranquil sanctuary. Reveal your natural glow with bespoke hair, skin, and spa treatments."
+    />
+    <meta property="og:type" content="website" />
 
-  <!-- Pure CSS Stylesheet -->
-  <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..800&family=Plus+Jakarta+Sans:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Modular Header Component -->
-  <site-header active="home"></site-header>
+    <!-- Pure CSS Stylesheet -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- Modular Header Component -->
+    <site-header active="home"></site-header>
 
-  <!-- Main Page Content -->
-  <main>
-    <!-- HERO SECTION -->
-    <section class="hero-section">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <div class="hero-badge">
-            <span class="badge badge-rose">Chattogram's Premier Women's Sanctuary</span>
-          </div>
-          <h1 class="hero-headline">Reveal Your <span class="text-rose">Natural Beauty</span></h1>
-          <p class="hero-description">
-            Immerse yourself in our tranquil, sunlit haven. From master hair color artistry and revitalizing botanical facials to bespoke bridal makeup and soothing aromatherapy rituals, we tailor every moment exclusively to you.
-          </p>
-          <div class="hero-actions">
-            <a href="appointment.html" class="btn btn-primary">Book Appointment</a>
-            <a href="services.html" class="btn btn-outline">Explore Services</a>
-          </div>
-          <div class="hero-rating-box">
-            <div class="rating-stars" aria-label="5 out of 5 stars rating">
-              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+    <!-- Main Page Content -->
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="badge badge-rose"
+                >Chattogram's Premier Women's Sanctuary</span
+              >
             </div>
-            <div class="rating-text">
-              <strong>4.9 / 5.0 Rating</strong> from over 3,400 happy women across New York
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-visual">
-          <div class="hero-image-frame">
-            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=85" alt="Elegant woman receiving luxury salon styling at Signature Beauty Salon" loading="eager">
-          </div>
-          <!-- Floating highlight card 1 -->
-          <div class="floating-card floating-card-top">
-            <div class="floating-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-              </svg>
-            </div>
-            <div>
-              <div class="floating-title">100% Organic</div>
-              <div class="floating-subtitle">Cruelty-Free Products</div>
-            </div>
-          </div>
-          <!-- Floating highlight card 2 -->
-          <div class="floating-card floating-card-bottom">
-            <div class="floating-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-              </svg>
-            </div>
-            <div>
-              <div class="floating-title">Master Stylists</div>
-              <div class="floating-subtitle">10+ Years Experience</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- STATS / METRICS STRIP -->
-    <section class="stats-strip">
-      <div class="container">
-        <div class="stats-grid">
-          <div class="stat-item">
-            <div class="stat-number">10+</div>
-            <div class="stat-label">Years of Craft Excellence</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">15,000+</div>
-            <div class="stat-label">Delighted Guests Served</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">35+</div>
-            <div class="stat-label">Luxury Curated Treatments</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">100%</div>
-            <div class="stat-label">Clean, Vegan Formulations</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURED SERVICES SECTION -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Signature Indulgence</span>
-          <h2 class="section-title">Our Featured Services</h2>
-          <p class="section-subtitle">
-            Handcrafted treatments designed to enhance your authentic radiance with organic botanicals and artistic precision.
-          </p>
-        </div>
-
-        <!-- FEATURED SERVICES GRID (Dynamically synced from services.html) -->
-        <featured-services class="services-grid" id="featured-services-grid" data-source="services.html" limit="4">
-          <!-- Featured Service 1 -->
-          <article class="service-card" data-category="hair">
-            <div class="service-card-media">
-              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" alt="Balayage & Gloss treatment" loading="lazy">
-              <span class="badge badge-rose service-card-category">Hair Care</span>
-            </div>
-            <div class="service-card-body">
-              <h3 class="service-card-title">Artisan Balayage & Gloss</h3>
-              <p class="service-card-desc">
-                Custom hand-painted highlights that mimic sun-dappled brilliance, finished with an organic Italian silk glaze for lasting shine and softness.
-              </p>
-              <div class="service-card-footer">
-                <div>
-                  <div class="service-meta-price">$185</div>
-                  <div class="service-meta-duration">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                    120 mins
-                  </div>
-                </div>
-                <a href="appointment.html?service=Hair:+Artisan+Balayage+%26+Gloss" class="btn btn-outline-rose btn-sm">Book Now</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Featured Service 2 -->
-          <article class="service-card" data-category="facial">
-            <div class="service-card-media">
-              <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80" alt="HydraFacial Radiance treatment" loading="lazy">
-              <span class="badge badge-rose service-card-category">Facial & Skincare</span>
-            </div>
-            <div class="service-card-body">
-              <h3 class="service-card-title">HydraFacial Radiance Boost</h3>
-              <p class="service-card-desc">
-                Patented vortex extraction removes impurities while flooding the dermal layers with antioxidant serums, peptides, and ultra-hydrating hyaluronic acid.
-              </p>
-              <div class="service-card-footer">
-                <div>
-                  <div class="service-meta-price">$140</div>
-                  <div class="service-meta-duration">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                    60 mins
-                  </div>
-                </div>
-                <a href="appointment.html?service=Facial:+HydraFacial+Radiance+Boost" class="btn btn-outline-rose btn-sm">Book Now</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Featured Service 3 -->
-          <article class="service-card" data-category="nails">
-            <div class="service-card-media">
-              <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=800&q=80" alt="Japanese Gel Manicure" loading="lazy">
-              <span class="badge badge-rose service-card-category">Nail Care</span>
-            </div>
-            <div class="service-card-body">
-              <h3 class="service-card-title">Japanese Gel Spa Manicure</h3>
-              <p class="service-card-desc">
-                Non-invasive e-file cuticle detailing, organic odorless Japanese leaf gel that promotes natural nail growth, and hot towel arm massage.
-              </p>
-              <div class="service-card-footer">
-                <div>
-                  <div class="service-meta-price">$65</div>
-                  <div class="service-meta-duration">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                    50 mins
-                  </div>
-                </div>
-                <a href="appointment.html?service=Nails:+Japanese+Gel+Spa+Manicure" class="btn btn-outline-rose btn-sm">Book Now</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Featured Service 4 -->
-          <article class="service-card" data-category="spa">
-            <div class="service-card-media">
-              <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80" alt="Aromatherapy Hot Stone Massage" loading="lazy">
-              <span class="badge badge-rose service-card-category">Spa & Relaxation</span>
-            </div>
-            <div class="service-card-body">
-              <h3 class="service-card-title">Aromatherapy Hot Stone Ritual</h3>
-              <p class="service-card-desc">
-                Smooth basalt volcanic stones paired with warm organic sweet almond, bergamot, and cedarwood oils to dissolve muscular tightness and induce deep calm.
-              </p>
-              <div class="service-card-footer">
-                <div>
-                  <div class="service-meta-price">$120</div>
-                  <div class="service-meta-duration">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                    75 mins
-                  </div>
-                </div>
-                <a href="appointment.html?service=Spa:+Aromatherapy+Hot+Stone+Ritual" class="btn btn-outline-rose btn-sm">Book Now</a>
-              </div>
-            </div>
-          </article>
-        </featured-services>
-
-        <div class="text-center" style="margin-top: 3.5rem;">
-          <a href="services.html" class="btn btn-secondary">View All Salon Services &rarr;</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- WHY CHOOSE US SECTION -->
-    <section class="section section-bg-nude">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">The Signature Difference</span>
-          <h2 class="section-title">Why Discerning Women Choose Us</h2>
-          <p class="section-subtitle">
-            We believe beauty should never be rushed. Step into an unhurried atmosphere dedicated to holistic well-being and exceptional results.
-          </p>
-        </div>
-
-        <div class="features-grid">
-          <!-- Feature 1 -->
-          <div class="feature-card">
-            <div class="feature-icon-wrapper">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
-              </svg>
-            </div>
-            <h3 class="feature-card-title">Clean, Non-Toxic Care</h3>
-            <p class="feature-card-desc">
-              We strictly utilize sulphate-free, paraben-free, and 100% cruelty-free botanical formulas from certified ethical European laboratories.
+            <h1 class="hero-headline">
+              Reveal Your <span class="text-rose">Natural Beauty</span>
+            </h1>
+            <p class="hero-description">
+              Immerse yourself in our tranquil, sunlit haven. From master hair
+              color artistry and revitalizing botanical facials to bespoke
+              bridal makeup and soothing aromatherapy rituals, we tailor every
+              moment exclusively to you.
             </p>
-          </div>
-
-          <!-- Feature 2 -->
-          <div class="feature-card">
-            <div class="feature-icon-wrapper">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="8" r="7"></circle>
-                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
-              </svg>
+            <div class="hero-actions">
+              <a href="appointment.html" class="btn btn-primary"
+                >Book Appointment</a
+              >
+              <a href="services.html" class="btn btn-outline"
+                >Explore Services</a
+              >
             </div>
-            <h3 class="feature-card-title">Certified Master Artists</h3>
-            <p class="feature-card-desc">
-              Our team consists of Vidal Sassoon alumni, Dermalogica skin therapists, and international bridal artists with decades of collective mastery.
-            </p>
-          </div>
-
-          <!-- Feature 3 -->
-          <div class="feature-card">
-            <div class="feature-icon-wrapper">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-              </svg>
-            </div>
-            <h3 class="feature-card-title">Tranquil Sanctuary</h3>
-            <p class="feature-card-desc">
-              Sound-dampened treatment suites, complimentary botanical loose-leaf teas, ergonomic wash recliners, and bespoke ambient playlists.
-            </p>
-          </div>
-
-          <!-- Feature 4 -->
-          <div class="feature-card">
-            <div class="feature-icon-wrapper">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                <polyline points="22 4 12 14.01 9 11.01"></polyline>
-              </svg>
-            </div>
-            <h3 class="feature-card-title">Personalized Consultations</h3>
-            <p class="feature-card-desc">
-              Every appointment starts with an in-depth 1-on-1 lifestyle analysis and hair/skin diagnostic to tailor every formula to your unique needs.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- POPULAR BEAUTY PACKAGES PREVIEW -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Curated Bundles</span>
-          <h2 class="section-title">Popular Beauty Packages</h2>
-          <p class="section-subtitle">
-            Specially combined treatments offering complete head-to-toe rejuvenation with remarkable value.
-          </p>
-        </div>
-
-        <div class="packages-grid">
-          <!-- Package 1 -->
-          <div class="package-card">
-            <div class="package-header">
-              <h3 class="package-name">Glow Package</h3>
-              <p class="package-subtitle">Ideal for weekend events or seasonal reset</p>
-              <div class="package-price-wrap">
-                <span class="package-price">$145</span>
-                <span class="package-duration">/ 2 hours</span>
+            <div class="hero-rating-box">
+              <div class="rating-stars" aria-label="5 out of 5 stars rating">
+                <span>★</span><span>★</span><span>★</span><span>★</span
+                ><span>★</span>
+              </div>
+              <div class="rating-text">
+                <strong>4.9 / 5.0 Rating</strong> from over 3,400 happy women
+                across New York
               </div>
             </div>
-            <ul class="package-features">
-              <li class="package-feature-item">
-                <span class="feature-check-icon">✓</span>
-                <span>Express HydraFacial Skin Cleanse</span>
-              </li>
-              <li class="package-feature-item">
-                <span class="feature-check-icon">✓</span>
-                <span>Signature Blowout & Thermal Style</span>
-              </li>
-              <li class="package-feature-item">
-                <span class="feature-check-icon">✓</span>
-                <span>Classic Botanical Gel Manicure</span>
-              </li>
-              <li class="package-feature-item">
-                <span class="feature-check-icon">✓</span>
-                <span>Aromatherapy Scalp & Hand Massage</span>
-              </li>
-            </ul>
-            <div class="package-perk">
-              <span>🥂 Complimentary Peach Bellini or Herbal Infusion</span>
-            </div>
-            <a href="appointment.html?package=Glow+Package" class="btn btn-outline-rose btn-block">Book Package</a>
           </div>
 
-          <!-- Package 2 (Most Popular) -->
-          <div class="package-card popular">
-            <span class="popular-badge">Most Popular</span>
-            <div class="package-header">
-              <h3 class="package-name">Bridal Glow Package</h3>
-              <p class="package-subtitle">Complete wedding readiness for the bride</p>
-              <div class="package-price-wrap">
-                <span class="package-price">$380</span>
-                <span class="package-duration">/ 4 hours</span>
+          <div class="hero-visual">
+            <div class="hero-image-frame">
+              <img
+                src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=85"
+                alt="Elegant woman receiving luxury salon styling at Signature Beauty Salon"
+                loading="eager"
+              />
+            </div>
+            <!-- Floating highlight card 1 -->
+            <div class="floating-card floating-card-top">
+              <div class="floating-icon">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+                  ></path>
+                </svg>
               </div>
-            </div>
-            <ul class="package-features">
-              <li class="package-feature-item">
-                <span class="feature-check-icon">✓</span>
-                <span>Bridal Hair & Makeup Preview Trial</span>
-              </li>
-              <li class="package-feature-item">
-                <span class="feature-check-icon">✓</span>
-                <span>Pre-Wedding Oxygen Radiance Facial</span>
-              </li>
-              <li class="package-feature-item">
-                <span class="feature-check-icon">✓</span>
-                <span>Deluxe Gel Manicure & Rose Pedicure</span>
-              </li>
-              <li class="package-feature-item">
-                <span class="feature-check-icon">✓</span>
-                <span>Neck, Shoulder & Decollete Massage</span>
-              </li>
-            </ul>
-            <div class="package-perk">
-              <span>👑 VIP Dressing Suite Access & Champagne Service</span>
-            </div>
-            <a href="appointment.html?package=Bridal+Glow+Package" class="btn btn-primary btn-block">Book Package</a>
-          </div>
-
-          <!-- Package 3 -->
-          <div class="package-card">
-            <div class="package-header">
-              <h3 class="package-name">Self-Care Retreat</h3>
-              <p class="package-subtitle">Full mind-body restoration & glow</p>
-              <div class="package-price-wrap">
-                <span class="package-price">$195</span>
-                <span class="package-duration">/ 2.5 hours</span>
-              </div>
-            </div>
-            <ul class="package-features">
-              <li class="package-feature-item">
-                <span class="feature-check-icon">✓</span>
-                <span>60-Min Aromatherapy Hot Stone Massage</span>
-              </li>
-              <li class="package-feature-item">
-                <span class="feature-check-icon">✓</span>
-                <span>Custom Vitamin C Brightening Facial</span>
-              </li>
-              <li class="package-feature-item">
-                <span class="feature-check-icon">✓</span>
-                <span>Warm Paraffin Foot Treatment & Pedicure</span>
-              </li>
-              <li class="package-feature-item">
-                <span class="feature-check-icon">✓</span>
-                <span>Herbal Steam Lounge Access</span>
-              </li>
-            </ul>
-            <div class="package-perk">
-              <span>🌿 Organic Tea Flight & Lavender Sleep Mist Gift</span>
-            </div>
-            <a href="appointment.html?package=Self-Care+Package" class="btn btn-outline-rose btn-block">Book Package</a>
-          </div>
-        </div>
-
-        <div class="text-center" style="margin-top: 3rem;">
-          <a href="packages.html" class="btn btn-outline">Explore All 6 Packages &rarr;</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- SPECIAL OFFER SECTION -->
-    <section class="section section-sm">
-      <div class="container">
-        <div class="offer-banner">
-          <div class="offer-grid">
-            <div class="offer-content">
-              <span class="badge badge-gold" style="margin-bottom: 1rem;">Limited Time Welcome Gift</span>
-              <h2>Experience Your First Luxury Session with 20% Off</h2>
-              <p>
-                We invite you to discover the Signature difference. Book any haircut, facial, or full package as a new guest and enjoy 20% off your treatment total.
-              </p>
-              <a href="appointment.html" class="btn btn-primary">Claim Your 20% Off</a>
-            </div>
-            <div class="offer-promo-box">
-              <div class="promo-tag">Use Voucher Code at Checkout</div>
-              <div class="promo-code">SIGNATUREGLOW</div>
-              <div class="promo-note">* Valid on your first appointment. Cannot be combined with other offers.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CUSTOMER TESTIMONIALS SECTION -->
-    <section class="section section-bg-white">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Client Love</span>
-          <h2 class="section-title">Words from Our Guests</h2>
-          <p class="section-subtitle">
-            Nothing means more to us than the radiant smiles and genuine reviews from our loyal community of women.
-          </p>
-        </div>
-
-        <div class="testimonials-grid">
-          <!-- Testimonial 1 -->
-          <div class="testimonial-card">
-            <div class="quote-mark">“</div>
-            <p class="testimonial-text">
-              Finding Elena and Signature Salon changed my relationship with my hair. My balayage looks completely natural and effortless, and my hair feels healthier than it ever has. The salon itself is like a peaceful oasis away from city noise.
-            </p>
-            <div class="testimonial-author">
-              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="Chloe Martin" class="author-avatar" loading="lazy">
               <div>
-                <h4 class="author-name">Chloe Martin</h4>
-                <div class="author-treatment">Balayage & Hair Care Client</div>
+                <div class="floating-title">100% Organic</div>
+                <div class="floating-subtitle">Cruelty-Free Products</div>
               </div>
             </div>
-          </div>
-
-          <!-- Testimonial 2 -->
-          <div class="testimonial-card">
-            <div class="quote-mark">“</div>
-            <p class="testimonial-text">
-              The Bridal Glow package was the absolute highlight of my wedding preparations! Isabella and Sophia took care of every detail. My skin was glowing on my big day, and my makeup stayed immaculate for over 14 hours!
-            </p>
-            <div class="testimonial-author">
-              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80" alt="Rachel Adams" class="author-avatar" loading="lazy">
-              <div>
-                <h4 class="author-name">Rachel Adams</h4>
-                <div class="author-treatment">Bridal Glow Client</div>
+            <!-- Floating highlight card 2 -->
+            <div class="floating-card floating-card-bottom">
+              <div class="floating-icon">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  ></polygon>
+                </svg>
               </div>
-            </div>
-          </div>
-
-          <!-- Testimonial 3 -->
-          <div class="testimonial-card">
-            <div class="quote-mark">“</div>
-            <p class="testimonial-text">
-              I come in monthly for the HydraFacial and Japanese Gel nails. The attention to cleanliness, medical-grade hygiene, and personalized skincare advice is unmatched. Worth every single penny!
-            </p>
-            <div class="testimonial-author">
-              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=80" alt="Camille Laurent" class="author-avatar" loading="lazy">
               <div>
-                <h4 class="author-name">Camille Laurent</h4>
-                <div class="author-treatment">Facial & Nails Regular</div>
+                <div class="floating-title">Master Stylists</div>
+                <div class="floating-subtitle">10+ Years Experience</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- FAQ SECTION -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Got Questions?</span>
-          <h2 class="section-title">Frequently Asked Questions</h2>
-          <p class="section-subtitle">
-            Find answers regarding our booking policies, products, and what to expect during your first visit.
+      <!-- STATS / METRICS STRIP -->
+      <section class="stats-strip">
+        <div class="container">
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-number">10+</div>
+              <div class="stat-label">Years of Craft Excellence</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">15,000+</div>
+              <div class="stat-label">Delighted Guests Served</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">35+</div>
+              <div class="stat-label">Luxury Curated Treatments</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Clean, Vegan Formulations</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED SERVICES SECTION -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Signature Indulgence</span>
+            <h2 class="section-title">Our Featured Services</h2>
+            <p class="section-subtitle">
+              Handcrafted treatments designed to enhance your authentic radiance
+              with organic botanicals and artistic precision.
+            </p>
+          </div>
+
+          <!-- FEATURED SERVICES GRID (Dynamically synced from services.html) -->
+          <featured-services
+            class="services-grid"
+            id="featured-services-grid"
+            data-source="services.html"
+            limit="4"
+          >
+            <!-- Featured Service 1 -->
+            <article class="service-card" data-category="hair">
+              <div class="service-card-media">
+                <img
+                  src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80"
+                  alt="Balayage & Gloss treatment"
+                  loading="lazy"
+                />
+                <span class="badge badge-rose service-card-category"
+                  >Hair Care</span
+                >
+              </div>
+              <div class="service-card-body">
+                <h3 class="service-card-title">Artisan Balayage & Gloss</h3>
+                <p class="service-card-desc">
+                  Custom hand-painted highlights that mimic sun-dappled
+                  brilliance, finished with an organic Italian silk glaze for
+                  lasting shine and softness.
+                </p>
+                <div class="service-card-footer">
+                  <div>
+                    <div class="service-meta-price">$185</div>
+                    <div class="service-meta-duration">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                      </svg>
+                      120 mins
+                    </div>
+                  </div>
+                  <a
+                    href="appointment.html?service=Hair:+Artisan+Balayage+%26+Gloss"
+                    class="btn btn-outline-rose btn-sm"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Featured Service 2 -->
+            <article class="service-card" data-category="facial">
+              <div class="service-card-media">
+                <img
+                  src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80"
+                  alt="HydraFacial Radiance treatment"
+                  loading="lazy"
+                />
+                <span class="badge badge-rose service-card-category"
+                  >Facial & Skincare</span
+                >
+              </div>
+              <div class="service-card-body">
+                <h3 class="service-card-title">HydraFacial Radiance Boost</h3>
+                <p class="service-card-desc">
+                  Patented vortex extraction removes impurities while flooding
+                  the dermal layers with antioxidant serums, peptides, and
+                  ultra-hydrating hyaluronic acid.
+                </p>
+                <div class="service-card-footer">
+                  <div>
+                    <div class="service-meta-price">$140</div>
+                    <div class="service-meta-duration">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                      </svg>
+                      60 mins
+                    </div>
+                  </div>
+                  <a
+                    href="appointment.html?service=Facial:+HydraFacial+Radiance+Boost"
+                    class="btn btn-outline-rose btn-sm"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Featured Service 3 -->
+            <article class="service-card" data-category="nails">
+              <div class="service-card-media">
+                <img
+                  src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=800&q=80"
+                  alt="Japanese Gel Manicure"
+                  loading="lazy"
+                />
+                <span class="badge badge-rose service-card-category"
+                  >Nail Care</span
+                >
+              </div>
+              <div class="service-card-body">
+                <h3 class="service-card-title">Japanese Gel Spa Manicure</h3>
+                <p class="service-card-desc">
+                  Non-invasive e-file cuticle detailing, organic odorless
+                  Japanese leaf gel that promotes natural nail growth, and hot
+                  towel arm massage.
+                </p>
+                <div class="service-card-footer">
+                  <div>
+                    <div class="service-meta-price">$65</div>
+                    <div class="service-meta-duration">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                      </svg>
+                      50 mins
+                    </div>
+                  </div>
+                  <a
+                    href="appointment.html?service=Nails:+Japanese+Gel+Spa+Manicure"
+                    class="btn btn-outline-rose btn-sm"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Featured Service 4 -->
+            <article class="service-card" data-category="spa">
+              <div class="service-card-media">
+                <img
+                  src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80"
+                  alt="Aromatherapy Hot Stone Massage"
+                  loading="lazy"
+                />
+                <span class="badge badge-rose service-card-category"
+                  >Spa & Relaxation</span
+                >
+              </div>
+              <div class="service-card-body">
+                <h3 class="service-card-title">
+                  Aromatherapy Hot Stone Ritual
+                </h3>
+                <p class="service-card-desc">
+                  Smooth basalt volcanic stones paired with warm organic sweet
+                  almond, bergamot, and cedarwood oils to dissolve muscular
+                  tightness and induce deep calm.
+                </p>
+                <div class="service-card-footer">
+                  <div>
+                    <div class="service-meta-price">$120</div>
+                    <div class="service-meta-duration">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                      </svg>
+                      75 mins
+                    </div>
+                  </div>
+                  <a
+                    href="appointment.html?service=Spa:+Aromatherapy+Hot+Stone+Ritual"
+                    class="btn btn-outline-rose btn-sm"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </article>
+          </featured-services>
+
+          <div class="text-center" style="margin-top: 3.5rem">
+            <a href="services.html" class="btn btn-secondary"
+              >View All Salon Services &rarr;</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY CHOOSE US SECTION -->
+      <section class="section section-bg-nude">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">The Signature Difference</span>
+            <h2 class="section-title">Why Discerning Women Choose Us</h2>
+            <p class="section-subtitle">
+              We believe beauty should never be rushed. Step into an unhurried
+              atmosphere dedicated to holistic well-being and exceptional
+              results.
+            </p>
+          </div>
+
+          <div class="features-grid">
+            <!-- Feature 1 -->
+            <div class="feature-card">
+              <div class="feature-icon-wrapper">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="feature-card-title">Clean, Non-Toxic Care</h3>
+              <p class="feature-card-desc">
+                We strictly utilize sulphate-free, paraben-free, and 100%
+                cruelty-free botanical formulas from certified ethical European
+                laboratories.
+              </p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-card">
+              <div class="feature-icon-wrapper">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="8" r="7"></circle>
+                  <polyline
+                    points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"
+                  ></polyline>
+                </svg>
+              </div>
+              <h3 class="feature-card-title">Certified Master Artists</h3>
+              <p class="feature-card-desc">
+                Our team consists of Vidal Sassoon alumni, Dermalogica skin
+                therapists, and international bridal artists with decades of
+                collective mastery.
+              </p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-card">
+              <div class="feature-icon-wrapper">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="feature-card-title">Tranquil Sanctuary</h3>
+              <p class="feature-card-desc">
+                Sound-dampened treatment suites, complimentary botanical
+                loose-leaf teas, ergonomic wash recliners, and bespoke ambient
+                playlists.
+              </p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="feature-card">
+              <div class="feature-icon-wrapper">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <h3 class="feature-card-title">Personalized Consultations</h3>
+              <p class="feature-card-desc">
+                Every appointment starts with an in-depth 1-on-1 lifestyle
+                analysis and hair/skin diagnostic to tailor every formula to
+                your unique needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- POPULAR BEAUTY PACKAGES PREVIEW -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Curated Bundles</span>
+            <h2 class="section-title">Popular Beauty Packages</h2>
+            <p class="section-subtitle">
+              Specially combined treatments offering complete head-to-toe
+              rejuvenation with remarkable value.
+            </p>
+          </div>
+
+          <div class="packages-grid">
+            <!-- Package 1 -->
+            <div class="package-card">
+              <div class="package-header">
+                <h3 class="package-name">Glow Package</h3>
+                <p class="package-subtitle">
+                  Ideal for weekend events or seasonal reset
+                </p>
+                <div class="package-price-wrap">
+                  <span class="package-price">$145</span>
+                  <span class="package-duration">/ 2 hours</span>
+                </div>
+              </div>
+              <ul class="package-features">
+                <li class="package-feature-item">
+                  <span class="feature-check-icon">✓</span>
+                  <span>Express HydraFacial Skin Cleanse</span>
+                </li>
+                <li class="package-feature-item">
+                  <span class="feature-check-icon">✓</span>
+                  <span>Signature Blowout & Thermal Style</span>
+                </li>
+                <li class="package-feature-item">
+                  <span class="feature-check-icon">✓</span>
+                  <span>Classic Botanical Gel Manicure</span>
+                </li>
+                <li class="package-feature-item">
+                  <span class="feature-check-icon">✓</span>
+                  <span>Aromatherapy Scalp & Hand Massage</span>
+                </li>
+              </ul>
+              <div class="package-perk">
+                <span>🥂 Complimentary Peach Bellini or Herbal Infusion</span>
+              </div>
+              <a
+                href="appointment.html?package=Glow+Package"
+                class="btn btn-outline-rose btn-block"
+                >Book Package</a
+              >
+            </div>
+
+            <!-- Package 2 (Most Popular) -->
+            <div class="package-card popular">
+              <span class="popular-badge">Most Popular</span>
+              <div class="package-header">
+                <h3 class="package-name">Bridal Glow Package</h3>
+                <p class="package-subtitle">
+                  Complete wedding readiness for the bride
+                </p>
+                <div class="package-price-wrap">
+                  <span class="package-price">$380</span>
+                  <span class="package-duration">/ 4 hours</span>
+                </div>
+              </div>
+              <ul class="package-features">
+                <li class="package-feature-item">
+                  <span class="feature-check-icon">✓</span>
+                  <span>Bridal Hair & Makeup Preview Trial</span>
+                </li>
+                <li class="package-feature-item">
+                  <span class="feature-check-icon">✓</span>
+                  <span>Pre-Wedding Oxygen Radiance Facial</span>
+                </li>
+                <li class="package-feature-item">
+                  <span class="feature-check-icon">✓</span>
+                  <span>Deluxe Gel Manicure & Rose Pedicure</span>
+                </li>
+                <li class="package-feature-item">
+                  <span class="feature-check-icon">✓</span>
+                  <span>Neck, Shoulder & Decollete Massage</span>
+                </li>
+              </ul>
+              <div class="package-perk">
+                <span>👑 VIP Dressing Suite Access & Champagne Service</span>
+              </div>
+              <a
+                href="appointment.html?package=Bridal+Glow+Package"
+                class="btn btn-primary btn-block"
+                >Book Package</a
+              >
+            </div>
+
+            <!-- Package 3 -->
+            <div class="package-card">
+              <div class="package-header">
+                <h3 class="package-name">Self-Care Retreat</h3>
+                <p class="package-subtitle">
+                  Full mind-body restoration & glow
+                </p>
+                <div class="package-price-wrap">
+                  <span class="package-price">$195</span>
+                  <span class="package-duration">/ 2.5 hours</span>
+                </div>
+              </div>
+              <ul class="package-features">
+                <li class="package-feature-item">
+                  <span class="feature-check-icon">✓</span>
+                  <span>60-Min Aromatherapy Hot Stone Massage</span>
+                </li>
+                <li class="package-feature-item">
+                  <span class="feature-check-icon">✓</span>
+                  <span>Custom Vitamin C Brightening Facial</span>
+                </li>
+                <li class="package-feature-item">
+                  <span class="feature-check-icon">✓</span>
+                  <span>Warm Paraffin Foot Treatment & Pedicure</span>
+                </li>
+                <li class="package-feature-item">
+                  <span class="feature-check-icon">✓</span>
+                  <span>Herbal Steam Lounge Access</span>
+                </li>
+              </ul>
+              <div class="package-perk">
+                <span>🌿 Organic Tea Flight & Lavender Sleep Mist Gift</span>
+              </div>
+              <a
+                href="appointment.html?package=Self-Care+Package"
+                class="btn btn-outline-rose btn-block"
+                >Book Package</a
+              >
+            </div>
+          </div>
+
+          <div class="text-center" style="margin-top: 3rem">
+            <a href="packages.html" class="btn btn-outline"
+              >Explore All 6 Packages &rarr;</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- SPECIAL OFFER SECTION -->
+      <section class="section section-sm">
+        <div class="container">
+          <div class="offer-banner">
+            <div class="offer-grid">
+              <div class="offer-content">
+                <span class="badge badge-gold" style="margin-bottom: 1rem"
+                  >Limited Time Welcome Gift</span
+                >
+                <h2>Experience Your First Luxury Session with 20% Off</h2>
+                <p>
+                  We invite you to discover the Signature difference. Book any
+                  haircut, facial, or full package as a new guest and enjoy 20%
+                  off your treatment total.
+                </p>
+                <a href="appointment.html" class="btn btn-primary"
+                  >Claim Your 20% Off</a
+                >
+              </div>
+              <div class="offer-promo-box">
+                <div class="promo-tag">Use Voucher Code at Checkout</div>
+                <div class="promo-code">SIGNATUREGLOW</div>
+                <div class="promo-note">
+                  * Valid on your first appointment. Cannot be combined with
+                  other offers.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CUSTOMER TESTIMONIALS SECTION -->
+      <section class="section section-bg-white">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Client Love</span>
+            <h2 class="section-title">Words from Our Guests</h2>
+            <p class="section-subtitle">
+              Nothing means more to us than the radiant smiles and genuine
+              reviews from our loyal community of women.
+            </p>
+          </div>
+
+          <div class="testimonials-grid">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+              <div class="quote-mark">“</div>
+              <p class="testimonial-text">
+                Finding Elena and Signature Salon changed my relationship with
+                my hair. My balayage looks completely natural and effortless,
+                and my hair feels healthier than it ever has. The salon itself
+                is like a peaceful oasis away from city noise.
+              </p>
+              <div class="testimonial-author">
+                <img
+                  src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80"
+                  alt="Chloe Martin"
+                  class="author-avatar"
+                  loading="lazy"
+                />
+                <div>
+                  <h4 class="author-name">Chloe Martin</h4>
+                  <div class="author-treatment">
+                    Balayage & Hair Care Client
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+              <div class="quote-mark">“</div>
+              <p class="testimonial-text">
+                The Bridal Glow package was the absolute highlight of my wedding
+                preparations! Isabella and Sophia took care of every detail. My
+                skin was glowing on my big day, and my makeup stayed immaculate
+                for over 14 hours!
+              </p>
+              <div class="testimonial-author">
+                <img
+                  src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80"
+                  alt="Rachel Adams"
+                  class="author-avatar"
+                  loading="lazy"
+                />
+                <div>
+                  <h4 class="author-name">Rachel Adams</h4>
+                  <div class="author-treatment">Bridal Glow Client</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+              <div class="quote-mark">“</div>
+              <p class="testimonial-text">
+                I come in monthly for the HydraFacial and Japanese Gel nails.
+                The attention to cleanliness, medical-grade hygiene, and
+                personalized skincare advice is unmatched. Worth every single
+                penny!
+              </p>
+              <div class="testimonial-author">
+                <img
+                  src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=80"
+                  alt="Camille Laurent"
+                  class="author-avatar"
+                  loading="lazy"
+                />
+                <div>
+                  <h4 class="author-name">Camille Laurent</h4>
+                  <div class="author-treatment">Facial & Nails Regular</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ SECTION -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Got Questions?</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">
+              Find answers regarding our booking policies, products, and what to
+              expect during your first visit.
+            </p>
+          </div>
+
+          <div class="faq-container">
+            <!-- FAQ Item 1 -->
+            <div class="faq-item active">
+              <button class="faq-question" aria-expanded="true">
+                <span
+                  >Do I need an appointment, or do you accept walk-ins?</span
+                >
+                <span class="faq-icon">&darr;</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  While we warmly welcome walk-ins when styling stations are
+                  open, we strongly recommend scheduling your appointment in
+                  advance to secure your preferred artist and time slot,
+                  especially on Fridays, Saturdays, and holidays.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>What is your cancellation and rescheduling policy?</span>
+                <span class="faq-icon">&darr;</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  We understand schedules change! We kindly request at least 24
+                  hours notice for any cancellation or reschedule so we may
+                  offer that dedicated time to guests on our waiting list.
+                  Cancellations with less than 24 hours notice may incur a 30%
+                  service fee.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>What hair and skincare product brands do you use?</span>
+                <span class="faq-icon">&darr;</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  We exclusively partner with certified clean, cruelty-free, and
+                  sustainable salon brands including Davines, Oribe, Dermalogica
+                  Professional, and K-Gloss Organic. All our color systems are
+                  ammonia-free or low-ammonia.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span
+                  >How early should I book my bridal hair and makeup
+                  trial?</span
+                >
+                <span class="faq-icon">&darr;</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  We recommend booking your bridal trial 2 to 4 months prior to
+                  your wedding date. This allows plenty of time to customize
+                  your bridal look, coordinate headpieces or veils, and schedule
+                  any pre-wedding skin prep treatments.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span
+                  >What hygiene and sanitation protocols do you maintain?</span
+                >
+                <span class="faq-icon">&darr;</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  Your safety and peace of mind are paramount. All manicure and
+                  pedicure metal tools are autoclaved using hospital-grade dry
+                  heat sterilization, nail files and buffers are single-use, and
+                  all treatment suites are thoroughly sanitized between guests.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINAL APPOINTMENT CTA SECTION -->
+      <section
+        class="section section-sm"
+        style="
+          background: linear-gradient(135deg, #fff0e6 0%, #f5e0d4 100%);
+          border-top: 1px solid var(--nude);
+        "
+      >
+        <div class="container text-center" style="max-width: 720px">
+          <span class="section-tag">Begin Your Ritual</span>
+          <h2 style="margin-bottom: 1.25rem">
+            Ready to Experience the Signature Glow?
+          </h2>
+          <p style="font-size: 1.15rem; margin-bottom: 2rem">
+            Treat yourself to the care you deserve. Our master stylists and skin
+            specialists look forward to welcoming you into our sanctuary.
           </p>
-        </div>
-
-        <div class="faq-container">
-          <!-- FAQ Item 1 -->
-          <div class="faq-item active">
-            <button class="faq-question" aria-expanded="true">
-              <span>Do I need an appointment, or do you accept walk-ins?</span>
-              <span class="faq-icon">&darr;</span>
-            </button>
-            <div class="faq-answer">
-              <div class="faq-answer-inner">
-                While we warmly welcome walk-ins when styling stations are open, we strongly recommend scheduling your appointment in advance to secure your preferred artist and time slot, especially on Fridays, Saturdays, and holidays.
-              </div>
-            </div>
-          </div>
-
-          <!-- FAQ Item 2 -->
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>What is your cancellation and rescheduling policy?</span>
-              <span class="faq-icon">&darr;</span>
-            </button>
-            <div class="faq-answer">
-              <div class="faq-answer-inner">
-                We understand schedules change! We kindly request at least 24 hours notice for any cancellation or reschedule so we may offer that dedicated time to guests on our waiting list. Cancellations with less than 24 hours notice may incur a 30% service fee.
-              </div>
-            </div>
-          </div>
-
-          <!-- FAQ Item 3 -->
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>What hair and skincare product brands do you use?</span>
-              <span class="faq-icon">&darr;</span>
-            </button>
-            <div class="faq-answer">
-              <div class="faq-answer-inner">
-                We exclusively partner with certified clean, cruelty-free, and sustainable salon brands including Davines, Oribe, Dermalogica Professional, and K-Gloss Organic. All our color systems are ammonia-free or low-ammonia.
-              </div>
-            </div>
-          </div>
-
-          <!-- FAQ Item 4 -->
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>How early should I book my bridal hair and makeup trial?</span>
-              <span class="faq-icon">&darr;</span>
-            </button>
-            <div class="faq-answer">
-              <div class="faq-answer-inner">
-                We recommend booking your bridal trial 2 to 4 months prior to your wedding date. This allows plenty of time to customize your bridal look, coordinate headpieces or veils, and schedule any pre-wedding skin prep treatments.
-              </div>
-            </div>
-          </div>
-
-          <!-- FAQ Item 5 -->
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>What hygiene and sanitation protocols do you maintain?</span>
-              <span class="faq-icon">&darr;</span>
-            </button>
-            <div class="faq-answer">
-              <div class="faq-answer-inner">
-                Your safety and peace of mind are paramount. All manicure and pedicure metal tools are autoclaved using hospital-grade dry heat sterilization, nail files and buffers are single-use, and all treatment suites are thoroughly sanitized between guests.
-              </div>
-            </div>
+          <div
+            style="
+              display: flex;
+              gap: 1rem;
+              justify-content: center;
+              flex-wrap: wrap;
+            "
+          >
+            <a href="appointment.html" class="btn btn-primary"
+              >Book Your Appointment Now</a
+            >
+            <a href="tel:0196968133" class="btn btn-outline"
+              >Call Concierge (0196968133)</a
+            >
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- FINAL APPOINTMENT CTA SECTION -->
-    <section class="section section-sm" style="background: linear-gradient(135deg, #FFF0E6 0%, #F5E0D4 100%); border-top: 1px solid var(--nude);">
-      <div class="container text-center" style="max-width: 720px;">
-        <span class="section-tag">Begin Your Ritual</span>
-        <h2 style="margin-bottom: 1.25rem;">Ready to Experience the Signature Glow?</h2>
-        <p style="font-size: 1.15rem; margin-bottom: 2rem;">
-          Treat yourself to the care you deserve. Our master stylists and skin specialists look forward to welcoming you into our sanctuary.
-        </p>
-        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-          <a href="appointment.html" class="btn btn-primary">Book Your Appointment Now</a>
-          <a href="tel:0196968133" class="btn btn-outline">Call Concierge (0196968133)</a>
-        </div>
-      </div>
-    </section>
-  </main>
+    <!-- Modular Footer & Back to Top Components -->
+    <site-footer></site-footer>
+    <back-to-top></back-to-top>
 
-  <!-- Modular Footer & Back to Top Components -->
-  <site-footer></site-footer>
-  <back-to-top></back-to-top>
-
-  <!-- Modular JavaScript Entry Point -->
-  <script type="module" src="/js/main.js"></script>
-</body>
+    <!-- Modular JavaScript Entry Point -->
+    <script type="module" src="/js/main.js"></script>
+  </body>
 </html>
